@@ -262,7 +262,7 @@ namespace CompleteLab3
 
             List<String> nonterminals = new List<String>() {
                 "CODE", "STATEMENT", "BARE", "BARE1", "OBJECT", "COMPLEX", "IDENTIFIER", "INDEX", "FOR_STATEMENT", "BOOL_EXP",
-                "WHILE_STATEMENT", "FOREACH_STATEMENT", "IF_STATEMENT"
+                "WHILE_STATEMENT", "IF_STATEMENT"
             };
 
             List<String> terminals = new List<String>() {
