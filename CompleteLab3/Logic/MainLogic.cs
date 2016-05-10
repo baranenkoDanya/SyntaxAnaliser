@@ -311,6 +311,7 @@ namespace CompleteLab3
 
             List<String> emptyStrings = new List<String>() { "CODE", "BARE1", "INDEX" };
 
+            int tempCount = 0;
             while (!tokens[0].StartsWith(stack[0]) || stack.Count != 1 || tokens.Count != 1)
             {
                 if (tokens[0].StartsWith(stack[0]) || tokens[0] == stack[0])
@@ -350,16 +351,19 @@ namespace CompleteLab3
                 }
 
                 //display the stack and tokens after each step
+                this.StackState += "Step " + tempCount + " :\r\n";
+                this.Tokens += "\r\n\r\n\r\nStep " + tempCount + " :\r\n";
                 foreach (String s in stack)
                 {
                     this.StackState += s + ", ";
                 }
-                this.StackState += "\n\n\n";
+                this.StackState += "\r\n\r\n\r\n";
                 foreach (String s in tokens)
                 {
                     this.Tokens += s + ", ";
                 }
-                this.Tokens += "\n\n\n";
+                //this.Tokens += "\r\n\r\n\r\n";
+                tempCount++;
             }
             return true;
         }

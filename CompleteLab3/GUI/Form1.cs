@@ -68,8 +68,8 @@ b = i * 200.342 + 1033.2e2;
         private void button2_Click(object sender, EventArgs e)
         {
             Stacks info = new Stacks();
-            info.label3.Text += this.stack;
-            info.label4.Text += this.token;
+            info.textBox1.Text += this.stack;
+            info.textBox2.Text += this.token;
             info.Show();
         }
 
